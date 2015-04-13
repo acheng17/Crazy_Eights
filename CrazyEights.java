@@ -40,6 +40,7 @@ public class CrazyEights
     System.out.println("To play Crazy Eights, you put down a card from your hand that matches the face-up card either by suit or by value.");
     while (gameOver == false)
     { //only keeps going if the game isn't over
+      gameOver();
       System.out.println();
       System.out.println();
       System.out.println("Your hand is:");
