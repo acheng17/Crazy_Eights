@@ -1,0 +1,38 @@
+public class Card
+{
+  int myValue;
+  String mySuit;
+  
+  public Card (int val, String suit)
+  { 
+    myValue = val;
+    mySuit = suit;
+  }
+  
+  public int getValue()
+  { //accesses your value needed
+    return myValue; 
+  }
+  
+  public String getSuit()
+  {
+    return mySuit;
+  }
+  
+  public String toString()
+  {
+    String output = "";
+    if (myValue == 1)
+      return "Ace" + mySuit;
+    if (myValue == 11)
+      return "Jack" + mySuit;
+    if (myValue == 12)
+      return "Queen" + mySuit;
+    if (myValue == 13)
+      return "King" + mySuit;
+    else
+      output += Integer.toString(myValue) + mySuit;
+    return output;
+  }
+} 
+ 

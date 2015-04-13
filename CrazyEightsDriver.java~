@@ -1,0 +1,8 @@
+public class CrazyEightsDriver
+{
+  public static void main(String[] args)
+  {
+    CrazyEights crazy = new CrazyEights();
+    crazy.play();
+  }
+}
